@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Segoe UI';
+  font-weight: 200;
+  src: local('Segoe UI Light');
+}
+@font-face {
+  font-family: 'Segoe UI';
+  font-weight: 300;
+  src: local('Segoe UI Semilight');
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Segoe UI';
+  font-weight: 600;
+  src: local('Segoe UI Semibold');
+}
+@font-face {
+  font-family: 'Segoe UI';
+  font-weight: 700;
+  src: local('Segoe UI Bold');
+}
+* {
+  font-family: 'Segoe UI';
+}
+body {
+  background-color: #f3f3f3;
+}
+// reset form elements
+.form-control,
+.input-group-text,
+.form-select {
+  border: none;
+}
+.form-select:hover {
+  cursor: pointer;
+}

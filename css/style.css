@@ -1,0 +1,305 @@
+@font-face {
+  font-family: 'Segoe UI';
+  font-weight: 200;
+  src: local("Segoe UI Light");
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  font-weight: 300;
+  src: local("Segoe UI Semilight");
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  font-weight: 400;
+  src: local("Segoe UI");
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  font-weight: 600;
+  src: local("Segoe UI Semibold");
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  font-weight: 700;
+  src: local("Segoe UI Bold");
+}
+
+* {
+  font-family: 'Segoe UI';
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+.form-control,
+.input-group-text,
+.form-select {
+  border: none;
+}
+
+.form-select:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(228, 78, 146, 0.81)), to(#ed9384));
+  background-image: linear-gradient(180deg, rgba(228, 78, 146, 0.81) 0%, #ed9384 100%);
+  font-size: 1.2rem;
+}
+
+.navbar .navbar-toggler {
+  color: #fff;
+  border-color: #fff;
+}
+
+.navbar .navbar-toggler:focus {
+  -webkit-box-shadow: 0 0 0 0.1rem;
+          box-shadow: 0 0 0 0.1rem;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgb(255,255,255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-brand {
+  font-family: 'Segoe UI';
+  font-size: 1.25rem;
+  font-weight: 600;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  color: white;
+}
+
+.navbar .navbar-brand {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  color: white;
+  padding-right: 0.4rem;
+  padding-left: 0.4rem;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: #fff;
+}
+
+.navbar .nav-actions .btn {
+  font-family: 'Segoe UI';
+  font-size: 1.25rem;
+  font-weight: 600;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: unset;
+}
+
+.navbar .nav-actions .btn:hover {
+  color: white;
+}
+
+.navbar .nav-actions .btn:last-of-type {
+  border: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+.navbar .nav-actions .btn:last-of-type:hover {
+  border-color: white;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100% - 124px);
+  min-height: calc(100vh - 124px);
+}
+
+.intro .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .intro .wrapper {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.intro h1 {
+  font-family: 'Segoe UI';
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #565656;
+}
+
+.intro form {
+  color: #707070;
+}
+
+.intro form .icons {
+  background: #fff;
+}
+
+.intro form .icons .form-select {
+  border-radius: 0;
+  border-right-color: #707070;
+}
+
+.intro form .form-control {
+  color: #707070;
+}
+
+.intro form .form-select:focus,
+.intro form .form-control:focus,
+.intro form .btn:focus {
+  border-color: transparent;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  margin-left: 0;
+}
+
+.intro form .btn {
+  background-color: rgba(235, 132, 143, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.intro form .btn:hover {
+  background-color: #eb848f;
+  color: #fff;
+}
+
+.intro form img {
+  max-width: 30px;
+}
+
+.intro p {
+  font-family: 'Segoe UI';
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #707070;
+}
+
+.intro .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.8rem;
+}
+
+.intro .actions .btn {
+  font-family: 'Segoe UI';
+  font-size: 1.25rem;
+  font-weight: 600;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  border-radius: 30px;
+  padding: 0.875rem 1rem;
+  background: rgba(235, 132, 143, 0.9);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.intro .actions .btn:hover {
+  background: #eb848f;
+  color: #fff;
+}
+
+@media screen and (min-width: 991px) {
+  .intro .actions .btn {
+    padding: 0.875rem 1.5rem;
+  }
+}
+
+.intro .actions .btn:last-of-type {
+  background: rgba(255, 255, 255, 0.75);
+  color: rgba(112, 112, 112, 0.75);
+  border-color: #707070;
+}
+
+.intro .actions .btn:last-of-type:hover {
+  background: #fff;
+  color: #707070;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid #707070;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer .container {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    margin-top: 0;
+  }
+}
+
+footer p {
+  color: #707070;
+  font-family: 'Segoe UI';
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  footer p {
+    text-align: left;
+  }
+}
+
+footer a {
+  color: #565656;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #eb848f;
+}
+/*# sourceMappingURL=style.css.map */

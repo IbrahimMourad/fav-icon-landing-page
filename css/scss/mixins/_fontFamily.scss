@@ -1,0 +1,5 @@
+@mixin fontFamily($fs, $fw) {
+  font-family: 'Segoe UI';
+  font-size: $fs;
+  font-weight: $fw;
+}

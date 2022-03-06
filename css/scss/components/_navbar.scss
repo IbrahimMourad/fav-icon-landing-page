@@ -1,0 +1,58 @@
+@import '../mixins/_mixins';
+.navbar {
+  background-image: linear-gradient(
+    180deg,
+    rgba(228, 78, 146, 0.81) 0%,
+    #ed9384 100%
+  );
+  font-size: 1.2rem;
+  .navbar-toggler {
+    color: $color-white;
+    border-color: $color-white;
+    &:focus {
+      box-shadow: 0 0 0 0.1rem;
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgb(255,255,255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    }
+  }
+  .navbar-nav .nav-link,
+  .navbar-brand {
+    @include fontFamily($fs-medium, $fw-semibold);
+    @include transition(all, 0.25, ease-in-out);
+    color: rgba($color-white, 0.75);
+    &:hover,
+    &:focus {
+      color: rgba($color-white, 1);
+    }
+  }
+  .navbar-brand {
+    border-right: 1px solid $color-white;
+    border-left: 1px solid $color-white;
+    color: rgba($color-white, 1);
+
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+  }
+
+  .navbar-nav .nav-link.active {
+    color: $color-white;
+  }
+  .nav-actions {
+    .btn {
+      @include fontFamily($fs-medium, $fw-semibold);
+      @include transition(all, 0.25, ease-in-out);
+      color: rgba($color-white, 0.6);
+      border-radius: unset;
+      &:hover {
+        color: rgba($color-white, 1);
+      }
+      &:last-of-type {
+        border: 3px solid rgba($color-white, 0.6);
+        &:hover {
+          border-color: rgba($color-white, 1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import '../mixins/_mixins';
+footer {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-top: 1px solid $color-light-black;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    @media screen and (min-width: 768px) {
+      flex-direction: initial;
+      margin-top: 0;
+    }
+  }
+  p {
+    color: $color-light-black;
+    @include fontFamily($fs-regular, $fw-semibold);
+    margin: 0;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  a {
+    color: $color-black;
+    text-decoration: none;
+    &:hover {
+      color: $color-pink;
+    }
+  }
+}
